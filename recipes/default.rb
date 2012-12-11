@@ -2,7 +2,10 @@
 # Cookbook Name:: sass
 # Recipe:: default
 #
-# Copyright 2012, YOUR_COMPANY_NAME
-#
-# All rights reserved - Do Not Redistribute
-#
+# https://github.com/jtgraphic/opscode-chef-cookbook-sass
+
+Gem_Package "sass"
+
+Link "/usr/bin/sass" do
+    to "/var/lib/gems/1.8/bin/sass"
+end
