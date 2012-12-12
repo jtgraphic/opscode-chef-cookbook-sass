@@ -4,8 +4,6 @@
 #
 # https://github.com/jtgraphic/opscode-chef-cookbook-sass
 
-Gem_Package "sass"
-
-Link "/usr/bin/sass" do
-    to "/var/lib/gems/1.8/bin/sass"
+Execute "gem install sass" do
+    not_if "which sass"
 end
