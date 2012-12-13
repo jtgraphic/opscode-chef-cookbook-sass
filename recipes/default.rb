@@ -4,6 +4,5 @@
 #
 # https://github.com/jtgraphic/opscode-chef-cookbook-sass
 
-Execute "gem install sass" do
-    not_if "which sass"
-end
+Package "rubygems"
+Execute "gem install sass"
