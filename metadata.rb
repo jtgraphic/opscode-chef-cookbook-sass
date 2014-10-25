@@ -1,3 +1,4 @@
+name             "sass"
 maintainer       "YOUR_COMPANY_NAME"
 maintainer_email "YOUR_EMAIL"
 license          "All rights reserved"
